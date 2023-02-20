@@ -8,6 +8,8 @@ function draw() {
     fill(255);
     // 四角形を5個描画
     for (let i = 0; i < 5; i++) {
-        rect(i * 60, 200, 60, 60);
+        for (let j = 0; j < 5; j++) {
+            rect(i * 60, j * 60, 60, 60);
+        }
     }
 }
